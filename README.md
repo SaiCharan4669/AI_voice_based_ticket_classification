@@ -9,16 +9,15 @@ This project bridges Automatic Speech Recognition (ASR) with Natural Language Pr
 
 Pipeline Architecture
 
-┌─────────────┐     ┌─────────────────┐     ┌──────────────────┐
-│  Voice      │────▶│  Speech-to-Text │────▶│  Text            │
-│  Input      │     │  (Whisper)      │     │  Preprocessing   │
-└─────────────┘     └─────────────────┘     └──────────────────┘
+
+ Voice      │────▶│  Speech-to-Text │────▶│  Text            
+  Input               (Whisper)             Preprocessing   
+
                                                       │
                                                       ▼
-┌─────────────┐     ┌─────────────────┐     ┌──────────────────┐
-│  Category + │◀────│  Logistic       │◀────│  Text            │
-│  Confidence │     │  Regression     │     │  Representation  │
-└─────────────┘     └─────────────────┘     └──────────────────┘
+
+│  Category + │◀────│  Logistic       │◀────│  Text            
+│  Confidence           Regression              Representation  
 
 
 
