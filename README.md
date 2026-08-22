@@ -1,11 +1,14 @@
-🎙️ Voice-Enabled IT Support Ticket Classifier
+ Voice-Enabled IT Support Ticket Classifier
+
+ 
 
 An end-to-end AI pipeline that takes a user's IT issue as voice input and automatically classifies it into the appropriate support category 
 
-📌 Overview
+ Overview
 This project bridges Automatic Speech Recognition (ASR) with Natural Language Processing (NLP) to create a seamless voice-to-ticket classification system. Users can either record their issue live through a microphone or upload an audio file. The system transcribes the audio, processes the text, and classifies the ticket with a confidence score.
-🚀 Pipeline Architecture
-plain
+
+Pipeline Architecture
+
 ┌─────────────┐     ┌─────────────────┐     ┌──────────────────┐
 │  Voice      │────▶│  Speech-to-Text │────▶│  Text            │
 │  Input      │     │  (Whisper)      │     │  Preprocessing   │
@@ -17,6 +20,9 @@ plain
 │  Confidence │     │  Regression     │     │  Representation  │
 └─────────────┘     └─────────────────┘     └──────────────────┘
 
+
+
+
 ✨ Features
 🎤 Voice Input — Record live audio or upload audio files via an interactive Gradio interface
 🗣️ Whisper ASR — OpenAI's Whisper for robust speech-to-text transcription (handles accents, noise, technical jargon)
@@ -27,7 +33,7 @@ plain
 
 High confidence → Auto-route the ticket
 Low confidence → Flag for human review
-🖥️ Web UI — Zero-friction interactive interface
+Web UI — Zero-friction interactive interface
 
  Stack
 
