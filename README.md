@@ -22,7 +22,7 @@ Pipeline Architecture
 
 
 
-✨ Features
+ Features
 🎤 Voice Input — Record live audio or upload audio files via an interactive Gradio interface
 🗣️ Whisper ASR — OpenAI's Whisper for robust speech-to-text transcription (handles accents, noise, technical jargon)
 🧹 NLP Preprocessing — Text cleaning, normalization, stopword removal, and lemmatization
@@ -45,7 +45,7 @@ Web Interface	Gradio
 Language	Python 3.9+
 
  Benchmark Results
-We evaluated three text representation methods on the IT support ticket classification task:
+evaluated three text representation methods on the IT support ticket classification task:
 Table
 Method	Accuracy
 TF-IDF	83.2% 
